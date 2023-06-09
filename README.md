@@ -320,33 +320,14 @@ To set up a new Python project in PyCharm and use the best.pt file for YOLOv5, y
 
 Clone repo and install [requirements.txt](https://github.com/ultralytics/yolov5/blob/master/requirements.txt) in a [Python>=3.7.0](https://www.python.org/) environment, including [PyTorch>=1.7](https://pytorch.org/get-started/locally/).
 
-\```bash 
-
-​​	pip install ultralytics
-
+```bash 
+pip install ultralytics
 git clone https://github.com/ultralytics/yolov5  # clone
-
 cd yolov5
-
 pip install -r requirements.txt  # install
 
-```![](Aspose.Words.9422deee-3c43-4c28-bb39-7d967de9927f.021.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+![](Aspose.Words.9422deee-3c43-4c28-bb39-7d967de9927f.021.png)
 
 
 1. Create a new Python file to write a  code (main.py)
