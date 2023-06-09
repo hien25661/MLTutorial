@@ -330,7 +330,7 @@ cd yolov5
 
 pip install -r requirements.txt  # install
 
-\```![](Aspose.Words.9422deee-3c43-4c28-bb39-7d967de9927f.021.png)
+```![](Aspose.Words.9422deee-3c43-4c28-bb39-7d967de9927f.021.png)
 
 
 
@@ -363,7 +363,7 @@ image = Image.open('test.jpg')
 results = model(image, size=640)  # batch of images
 results.print()
 results.show()
-````
+```
 
 ![](Aspose.Words.9422deee-3c43-4c28-bb39-7d967de9927f.022.png)
 
