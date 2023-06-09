@@ -7,9 +7,11 @@ This tutorial provides step-by-step instructions on how to build an ML model usi
 
 **Introduction of the problem:**
 
-We have an image (referred to as the parent image) that contains multiple frames, which are individual images. We need to extract these frames from the parent image without knowing the coordinates of these frames.![](Aspose.Words.15fc5db4-d5ee-4887-9e41-c4bf94347574.001.jpeg)![](Aspose.Words.15fc5db4-d5ee-4887-9e41-c4bf94347574.002.jpeg)
+We have an image (referred to as the parent image) that contains multiple frames, which are individual images. We need to extract these frames from the parent image without knowing the coordinates of these frames.
 
-` `![](Aspose.Words.15fc5db4-d5ee-4887-9e41-c4bf94347574.003.png)
+
+![](Aspose.Words.15fc5db4-d5ee-4887-9e41-c4bf94347574.002.jpeg)![](Aspose.Words.15fc5db4-d5ee-4887-9e41-c4bf94347574.003.png)![](Aspose.Words.15fc5db4-d5ee-4887-9e41-c4bf94347574.001.jpeg)
+
 
 
 
@@ -42,21 +44,21 @@ To create data using online tools like Online Photo Collage Maker, you would nee
 
 Alternatively, if you prefer to create images using Python code, you can utilize various libraries such as PIL (Python Imaging Library) or OpenCV. Here's an example code snippet using the PIL library:
 
-\```bash	
+```bash	
 
 from PIL import Image
 
-\# Create a blank canvas for the collage
+# Create a blank canvas for the collage
 
-canvas\_width = 800
+canvas_width = 800
 
-canvas\_height = 600
+canvas_height = 600
 
-canvas\_color = (255, 255, 255)  # White
+canvas_color = (255, 255, 255)  # White
 
-canvas = Image.new('RGB', (canvas\_width, canvas\_height), canvas\_color)
+canvas = Image.new('RGB', (canvas_width, canva_height), canvas_color)
 
-\# Load and resize the images to be included in the collage
+# Load and resize the images to be included in the collage
 
 image1 = Image.open('image1.jpg')
 
@@ -66,17 +68,17 @@ image2 = Image.open('image2.jpg')
 
 image2 = image2.resize((200, 200))
 
-\# Paste the resized images onto the canvas at desired positions
+# Paste the resized images onto the canvas at desired positions
 
 canvas.paste(image1, (50, 50))
 
 canvas.paste(image2, (350, 50))
 
-\# Save the collage as a new image file
+# Save the collage as a new image file
 
 canvas.save('collage.jpg')
 
-\```
+```
 
 In the above code, you can specify the canvas size, background color, and the positions of the images on the canvas. Make sure to have the PIL library installed (pip install pillow) and provide the paths to the actual image files you want to include in the collage.
 
@@ -88,22 +90,18 @@ Feel free to modify the code according to your specific requirements, such as ad
 
 1. Install LabelImg: 
 
-`	````bash 
+```bash pip install LabelImg```
 
-pip install LabelImg
+2. Launch LabelImg: 
 
-*```*
+```bash Labelmg```
 
-1. Launch LabelImg: 
-
-\```bash Labelmg
-
-1. Configure the annotation format: In the LabelImg toolbar, 
-1. Begin labeling: Open an image from your dataset in LabelImg. Use the bounding box tool to draw boxes around the frame images you want to detect. Adjust the box position and size to accurately enclose each object. Assign the label class as "**Frame**" for each bounding box.
-1. Save annotations: After annotating an image, click on "Save" to save the annotations in the YOLO format. This will generate a corresponding .txt file that contains the annotations for the image.
-1. Continue labeling: Repeat the labeling process for all the images in your dataset.
-1. Organize the dataset: Once you have labeled all the images, move the images into the images folder of your dataset, and place the corresponding annotation files (.xml) in the labels folder. Ensure that each image has its corresponding annotation file with the same filename.
-1. Verify annotations: Double-check the annotations to ensure that the bounding boxes accurately enclose the frame images. Make any necessary adjustments or corrections.
+3. Configure the annotation format:  In the LabelImg toolbar, choose PascalVOC
+4. Begin labeling: Open an image from your dataset in LabelImg. Use the bounding box tool to draw boxes around the frame images you want to detect. Adjust the box position and size to accurately enclose each object. Assign the label class as "**Frame**" for each bounding box.
+5. Save annotations: After annotating an image, click on "Save" to save the annotations in the YOLO format. This will generate a corresponding .txt file that contains the annotations for the image.
+6. Continue labeling: Repeat the labeling process for all the images in your dataset.
+7. Organize the dataset: Once you have labeled all the images, move the images into the images folder of your dataset, and place the corresponding annotation files (.xml) in the labels folder. Ensure that each image has its corresponding annotation file with the same filename.
+8. Verify annotations: Double-check the annotations to ensure that the bounding boxes accurately enclose the frame images. Make any necessary adjustments or corrections.
 
 ![](Aspose.Words.15fc5db4-d5ee-4887-9e41-c4bf94347574.005.png)
 
@@ -155,7 +153,7 @@ pip install LabelImg
 
 
 
-1. Split dataset : Split your dataset into training and validation subsets. 
+2. Split dataset : Split your dataset into training and validation subsets. 
 
 ![](Aspose.Words.15fc5db4-d5ee-4887-9e41-c4bf94347574.009.png)
 
@@ -179,7 +177,7 @@ pip install LabelImg
 
 
 
-1. Image Transformation
+3. Image Transformation
 
 In this step, we will process the training dataset of images. This will decrease training time and increase performance by applying image transformations to all the images in this dataset. Roboflow supports many methods for image transformation, such as resizing, auto orientation, and grayscale.
 
@@ -187,7 +185,7 @@ In this tutorial, we will apply the resize transformation with a target size of 
 
 ![](Aspose.Words.15fc5db4-d5ee-4887-9e41-c4bf94347574.010.png)
 
-1. Image Augmentation
+4. Image Augmentation
 
 Augmentation performs transforms on your existing images to create new variations and increase the number of images in your dataset. This ultimately makes models more accurate across a broader range of use cases.
 
@@ -203,14 +201,14 @@ Augmentation performs transforms on your existing images to create new variation
 
 
 
-1. Generate Dataset: Clicking on Generate Button to generate image dataset
+5. Generate Dataset: Clicking on Generate Button to generate image dataset
 
 ![](Aspose.Words.15fc5db4-d5ee-4887-9e41-c4bf94347574.012.png)
 
 
 
 
-1. Download Dataset![](Aspose.Words.15fc5db4-d5ee-4887-9e41-c4bf94347574.013.png)
+6. Download Dataset![](Aspose.Words.15fc5db4-d5ee-4887-9e41-c4bf94347574.013.png)
 
 
 
