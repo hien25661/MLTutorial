@@ -351,7 +351,7 @@ pip install -r requirements.txt  # install
 
 1. Create a new Python file to write a  code (main.py)
 
-````bash
+```bash
 import torch
 from PIL import Image
 import ssl
