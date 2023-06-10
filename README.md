@@ -79,11 +79,15 @@ Feel free to modify the code according to your specific requirements, such as ad
 
 1. Install LabelImg: 
 
-```bash pip install LabelImg```
+```bash 
+pip install LabelImg
+```
 
 2. Launch LabelImg: 
 
-```bash Labelmg```
+```bash 
+Labelmg
+```
 
 ![](Aspose.Words.9422deee-3c43-4c28-bb39-7d967de9927f.005.png)
 
