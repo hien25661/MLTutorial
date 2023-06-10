@@ -294,7 +294,7 @@ Augmentation performs transforms on your existing images to create new variation
 
 
 
-1. Save the trained model: After training, the model will be saved in the runs directory. You can download it or move it to Google Drive for future use.
+6. Save the trained model: After training, the model will be saved in the runs directory. You can download it or move it to Google Drive for future use.
 
 
 
@@ -317,10 +317,10 @@ Augmentation performs transforms on your existing images to create new variation
 To set up a new Python project in PyCharm and use the best.pt file for YOLOv5, you can follow these steps:
 
 1. Install PyCharm: Download and install the latest version of PyCharm from the official website (<https://www.jetbrains.com/pycharm/>).
-1. Create a new project: Launch PyCharm and click on "Create New Project" or go to "File" > "New Project". Choose a location for your project and select a Python interpreter.
-1. Set up a virtual environment (optional): It's recommended to use a virtual environment to isolate project dependencies. In PyCharm, go to "File" > "Settings" > "Project: [your\_project\_name]" > "Python Interpreter". Click on the gear icon and select "Add".
-1. Choose a virtual environment: Select the desired virtual environment from the list or create a new one. Once selected, click "OK".
-1. Install required dependencies: 
+2. Create a new project: Launch PyCharm and click on "Create New Project" or go to "File" > "New Project". Choose a location for your project and select a Python interpreter.
+3. Set up a virtual environment (optional): It's recommended to use a virtual environment to isolate project dependencies. In PyCharm, go to "File" > "Settings" > "Project: [your\_project\_name]" > "Python Interpreter". Click on the gear icon and select "Add".
+4. Choose a virtual environment: Select the desired virtual environment from the list or create a new one. Once selected, click "OK".
+5. Install required dependencies: 
 
 Clone repo and install [requirements.txt](https://github.com/ultralytics/yolov5/blob/master/requirements.txt) in a [Python>=3.7.0](https://www.python.org/) environment, including [PyTorch>=1.7](https://pytorch.org/get-started/locally/).
 
@@ -334,7 +334,7 @@ pip install -r requirements.txt  # install
 ![](Aspose.Words.9422deee-3c43-4c28-bb39-7d967de9927f.021.png)
 
 
-1. Create a new Python file to write a  code (main.py)
+6. Create a new Python file to write a  code (main.py)
 
 ```bash
 import torch
