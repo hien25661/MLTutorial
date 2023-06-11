@@ -94,7 +94,7 @@ Labelmg
 3. Configure the annotation format: Choose PascalVOC
 
 4. Begin labeling: Open an image from your dataset in LabelImg. Use the bounding box tool to draw boxes around the frame images you want to detect. Adjust the box position and size to accurately enclose each object. Assign the label class as "**Frame**" for each bounding box.
-5. Save annotations: After annotating an image, click on "Save" to save the annotations in the YOLO format. This will generate a corresponding .txt file that contains the annotations for the image.
+5. Save annotations: After annotating an image, click on "Save" to save the annotations in the YOLO format. This will generate a corresponding .xml file that contains the annotations for the image.
 6. Continue labeling: Repeat the labeling process for all the images in your dataset.
 7. Organize the dataset: Once you have labeled all the images, move the images into the images folder of your dataset, and place the corresponding annotation files (.xml) in the labels folder. Ensure that each image has its corresponding annotation file with the same filename.
 8. Verify annotations: Double-check the annotations to ensure that the bounding boxes accurately enclose the frame images. Make any necessary adjustments or corrections.
